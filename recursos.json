@@ -1,0 +1,400 @@
+[
+    {
+      "nombre": "Perros",
+      "tipo": "Animal",
+      "estado": "libre",
+      "descripcion": "Grupo de perros disponibles en el refugio.",
+      "asociado": ["Correas y Arneses"],
+      "exclusiones": ["Vacuna Triple Felina","Vacuna Combinada para Conejos","Vacuna Preventiva para Roedores","Vacuna Combinada para Aves"]
+    },
+    {
+      "nombre": "Gatos",
+      "tipo": "Animal",
+      "estado": "libre",
+      "descripcion": "Grupo de gatos disponibles en el refugio.",
+      "asociado": ["Caja de Transporte"],
+      "exclusiones": ["Vacuna Sextuple Canina","Vacuna Combinada para Conejos","Vacuna Preventiva para Roedores","Vacuna Combinada para Aves"]
+    },
+    {
+      "nombre": "Conejos",
+      "tipo": "Animal",
+      "estado": "libre",
+      "descripcion": "Grupo de conejos disponibles en el refugio.",
+      "asociado": ["Jaula de Transporte"],
+      "exclusiones": ["Vacuna Triple Felina","Vacuna Sextuple Canina","Vacuna Preventiva para Roedores","Vacuna Combinada para Aves"]
+    },
+    {
+      "nombre": "Aves",
+      "tipo": "Animal",
+      "estado": "libre",
+      "descripcion": "Grupo de aves disponibles en el refugio.",
+      "asociado": ["Jaula de Transporte"],
+      "exclusiones": ["Vacuna Triple Felina","Vacuna Sextuple Canina","Vacuna Combinada para Conejos","Vacuna Preventiva para Roedores"]
+    },
+    {
+      "nombre": "Serpientes",
+      "tipo": "Animal",
+      "estado": "libre",
+      "descripcion": "Grupo de serpientes bajo cuidado especial.",
+      "asociado": ["Terrario Especial"],
+      "exclusiones": ["Vacuna Combinada para Aves","Vacuna Combinada para Conejos","Vacuna Preventiva para Roedores","Vacuna Sextuple Canina","Vacuna Triple Felina"]
+    },
+    {
+      "nombre": "Roedores",
+      "tipo": "Animal",
+      "estado": "libre",
+      "descripcion": "Grupo de roedores pequeños en el refugio.",
+      "asociado": ["Jaula de Transporte"],
+      "exclusiones": ["Vacuna Combinada para Aves","Vacuna Combinada para Conejos","Vacuna Sextuple Canina","Vacuna Triple Felina"]
+    },
+    {
+      "nombre": "Vacuna Séxtuple Canina",
+      "tipo": "Vacuna",
+      "estado": "libre",
+      "descripcion": "Protege a perros contra múltiples enfermedades.",
+      "asociado": ["Veterinario","Perros"],
+      "exclusiones": ["Gatos","Roedores","Serpientes","Conejos","Aves"]
+    },
+    {
+      "nombre": "Vacuna Triple Felina",
+      "tipo": "Vacuna",
+      "estado": "libre",
+      "descripcion": "Protege a gatos contra enfermedades comunes.",
+      "asociado": ["Veterinario","Gatos"],
+      "exclusiones": ["Perros","Roedores","Serpientes","Conejos","Aves"]
+    },
+    {
+      "nombre": "Vacuna Combinada para Conejos",
+      "tipo": "Vacuna",
+      "estado": "libre",
+      "descripcion": "Protege a conejos contra enfermedades comunes.",
+      "asociado": ["Veterinario","Conejos"],
+      "exclusiones": ["Perros","Roedores","Serpientes","Gatos","Aves"]
+    },
+    {
+      "nombre": "Vacuna Preventiva para Roedores",
+      "tipo": "Vacuna",
+      "estado": "libre",
+      "descripcion": "Protege a gatos contra enfermedades comunes.",
+      "asociado": ["Veterinario","Roedores"],
+      "exclusiones": ["Perros","Gatos","Serpientes","Conejos","Aves"]
+    },
+    {
+      "nombre": "Vacuna Combinada para Aves",
+      "tipo": "Vacuna",
+      "estado": "libre",
+      "descripcion": "Protege a gatos contra enfermedades comunes.",
+      "asociado": ["Veterinario","Aves"],
+      "exclusiones": ["Perros","Roedores","Serpientes","Conejos","Gatos"]
+    },
+    {
+      "nombre": "Ivermectina Oral",
+      "tipo": "Medicamento",
+      "estado": "libre",
+      "descripcion": "Antiparasitario usado en desparasitación rutinaria.",
+      "asociado": ["Veterinario"],
+      "exclusiones": ["Croquetas Premium","Carne Congelada","Heno Premium","Mezcla de semillas"]
+    },
+    {
+      "nombre": "Anestesia General (Propofol)",
+      "tipo": "Medicamento",
+      "estado": "libre",
+      "descripcion": "Anestésico para procedimientos quirúrgicos.",
+      "asociado": ["Instrumental Quirúrgico","Veterinario"],
+      "exclusiones": ["Croquetas Premium","Carne Congelada","Heno Premium","Mezcla de semillas"]
+    },
+    {
+      "nombre": "Sedantes (Xilazina)",
+      "tipo": "Medicamento",
+      "estado": "libre",
+      "descripcion": "Sedante usado en rescates y traslados.",
+      "asociado": ["Veterinario"]
+    },
+       {
+      "nombre": "Veterinario",
+      "tipo": "Personal",
+      "estado": "libre",
+      "descripcion": "Profesional encargado de la salud animal.",
+      "asociado": ["Kit medico basico"],
+      "exclusiones": ["Entrenador Certificado","Voluntarios Paseadores"]
+    },
+    {
+      "nombre": "Voluntario",
+      "tipo": "Personal",
+      "estado": "libre",
+      "descripcion": "Persona que apoya en tareas generales del refugio.",
+      "asociado": [],
+      "exclusiones": ["Voluntario de Adopciones","Personal de Recepcion"]
+    },
+    {
+      "nombre": "Voluntario de Adopciones",
+      "tipo": "Personal",
+      "estado": "libre",
+      "descripcion": "Encargado de acompañar procesos de adopción.",
+      "asociado": ["Cámara Digital"],
+      "exclusiones": ["Voluntario"]
+    },
+    {
+      "nombre": "Voluntarios Paseadores",
+      "tipo": "Personal",
+      "estado": "libre",
+      "descripcion": "Encargados de pasear a los perros.",
+      "asociado": ["Correas y Arneses"],
+      "exclusiones": ["Veterinario"]
+    },
+    {
+      "nombre": "Entrenador Certificado",
+      "tipo": "Personal",
+      "estado": "libre",
+      "descripcion": "Especialista en conducta y obediencia animal.",
+      "asociado": ["Patio de Ejercicios","Juguetes interactivos"],
+      "exclusiones": ["Veterinario"]
+    },
+    {
+      "nombre": "Personal de Recepción",
+      "tipo": "Personal",
+      "estado": "libre",
+      "descripcion": "Encargado de la atención al público y de abrir el refugio.",
+      "asociado": ["Llaves del refugio"],
+      "exclusiones": ["Voluntario"]
+    },
+    {
+      "nombre": "Sala de Procedimientos",
+      "tipo": "Espacio",
+      "estado": "libre",
+      "descripcion": "Espacio para consultas y vacunaciones.",
+      "asociado": ["Veterinario"],
+      "exclusiones": ["Sala de Entrevistas","Sala Quirúrgica","Area de Alojamiento","Area de Alimentacion","Area de Bano","Patio de Ejercicios"]
+    },
+    {
+      "nombre": "Sala Quirúrgica",
+      "tipo": "Espacio",
+      "estado": "libre",
+      "descripcion": "Área destinada a cirugías y esterilizaciones.",
+      "asociado": ["Instrumental Quirúrgico","Veterinario"],
+      "exclusiones": ["Sala de Entrevistas","Sala de Procedimientos","Area de Alojamiento","Area de Alimentacion","Area de Bano","Patio de Ejercicios"]
+    },
+    {
+      "nombre": "Sala de Entrevistas",
+      "tipo": "Espacio",
+      "estado": "libre",
+      "descripcion": "Espacio para entrevistas de adopción.",
+      "asociado": ["Voluntario de Adopciones"],
+      "exclusiones": ["Sala de Procedimientos","Sala Quirúrgica","Area de Alojamiento","Area de Alimentacion","Area de Bano","Patio de Ejercicios"]
+    },
+    {
+      "nombre": "Área de Alojamiento",
+      "tipo": "Espacio",
+      "estado": "libre",
+      "descripcion": "Lugar donde permanecen los animales.",
+      "asociado": ["Voluntario"],
+      "exclusiones": ["Sala de Entrevistas","Sala Quirúrgica","Sala de Procedimientos","Area de Alimentacion","Area de Bano","Patio de Ejercicios"]
+    },
+    {
+      "nombre": "Área de Alimentación",
+      "tipo": "Espacio",
+      "estado": "libre",
+      "descripcion": "Zona destinada a la alimentación de los animales.",
+      "asociado": ["Vasijas de acero"],
+      "exclusiones": ["Sala de Entrevistas","Sala Quirúrgica","Area de Alojamiento","Sala de Procedimientos","Area de Bano","Patio de Ejercicios"]
+    },
+    {
+      "nombre": "Área de Baño",
+      "tipo": "Espacio",
+      "estado": "libre",
+      "descripcion": "Zona para higiene de los animales.",
+      "asociado": ["Recipiente de Agua"],
+      "exclusiones": ["Sala de Entrevistas","Sala Quirúrgica","Area de Alojamiento","Area de Alimentacion","Sala de Procedimientos","Patio de Ejercicios"]
+    },
+    {
+      "nombre": "Patio de Ejercicios",
+      "tipo": "Espacio",
+      "estado": "libre",
+      "descripcion": "Zona destinada a la realizacion de ejercicios al aire libre",
+      "asociado": ["Entrenador Certificado","Juguetes interactivos"],
+      "exclusiones": ["Sala de Entrevistas","Sala Quirúrgica","Area de Alojamiento","Area de Alimentacion","Sala de Procedimientos","Area de Bano"]
+    },
+    
+     {
+      "nombre": "Llaves del Refugio",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Necesario para abrir el Refugio y comenzar la jornada laboral",
+      "asociado": ["Personal de Recepcion"],
+      "exclusiones": ["Voluntario"]
+    },
+     {
+      "nombre": "Camara Digital",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Necesaria para tomar fotografias de los animales adoptados",
+      "asociado": ["Voluntario de Adopciones"],
+      "exclusiones": ["Veterinario"]
+    },
+    {
+      "nombre": "Correas y Arneses",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Equipo de paseo para perros.",
+      "asociado": ["Perros"],
+      "exclusiones": ["Gatos","Roedores","Serpientes","Conejos","Aves"]
+    },
+    {
+      "nombre": "Escoba Industrial",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Instrumento necesario para la higiene del refugio",
+      "asociado": ["Voluntario"],
+      "exclusiones": ["Veterinario","Personal de Recepcion","Voluntario de Adopciones","Voluntarios Paseadores","Entrenador Certificado"]
+    },
+     {
+      "nombre": "Desinfectante",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Instrumento necesario para la higiene del refugio",
+      "asociado": ["Voluntario"],
+      "exclusiones": ["Veterinario","Personal de Recepcion","Voluntario de Adopciones","Voluntarios Paseadores","Entrenador Certificado"]
+    },
+     {
+      "nombre": "Kit medico basico",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Contiene los recursos medicos indispensables",
+      "asociado": ["Veterinario"],
+      "exclusiones": ["Voluntario","Personal de Recepcion","Voluntario de Adopciones","Voluntarios Paseadores","Entrenador Certificado"]
+    },
+     {
+      "nombre": "Instrumental Quirugico",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Instrumentos indispensables para la realizacion de cirugias",
+      "asociado": ["Sala Quirugica","Veterinario"],
+      "exclusiones": ["Voluntario","Personal de Recepcion","Voluntario de Adopciones","Voluntarios Paseadores","Entrenador Certificado"]
+    },
+     {
+      "nombre": "Juguetes interactivos",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Equipo para el ejercicio y ocio de los animales",
+      "asociado": ["Entrenador Certificado"],
+      "exclusiones": ["Voluntario","Personal de Recepcion","Voluntario de Adopciones","Voluntarios Paseadores","Veterinario"]
+    },
+    {
+      "nombre": "Vasijas de acero",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Instrumentos necesarios para servir la comida de los animales",
+      "asociado": ["Area de Alimentacion"],
+      "exclusiones": ["Desinfectante"]
+    },
+      {
+      "nombre": "Toallas Absorbentes",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Instrumentos necesarios en el aseo de los animales",
+      "asociado": ["Area de bano"],
+      "exclusiones": ["Serpientes","Aves"]
+    },
+      {
+      "nombre": "Recipiente de Agua",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Instrumento necesario en el aseo de los animales",
+      "asociado": ["Area de bano"],
+      "exclusiones": []
+    },
+      {
+      "nombre": "Carpa de Exhibicion",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Equipo necesario para exhibir los animales y promover su adopcion",
+      "asociado": ["Voluntario","Folletos informativos"],
+      "exclusiones": ["Personal de Recepcion","Voluntario de Adopciones","Voluntarios Paseadores","Veterinario","Entrenador Certificado"]
+    },
+      {
+      "nombre": "Folletos Informativos",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Instrumentos necesarios para promover la adopcion y cuidado de los animales",
+      "asociado": ["Carpa de Exhibicion"],
+      "exclusiones": ["Voluntario","Personal de Recepcion","Voluntario de Adopciones","Voluntarios Paseadores","Veterinario"]
+    },
+      {
+      "nombre": "Bolsas sanitarias",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Equipo para recoger los excrementos de los perros durante su paseo",
+      "asociado": ["Voluntarios Paseadores","Perros"],
+      "exclusiones": ["Voluntario","Personal de Recepcion","Voluntario de Adopciones","Veterinario"]
+    },
+    {
+      "nombre": "Caja de Transporte",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Transportadora segura para gatos.",
+      "asociado": ["Gatos"],
+      "exclusiones": ["Perros","Roedores","Serpientes","Conejos","Aves"]
+    },
+    {
+      "nombre": "Jaula de Transporte",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Jaula portátil para animales pequeños.",
+      "asociado": ["Conejos", "Aves", "Roedores"],
+      "exclusiones": ["Perros","Gatos","Serpientes"]
+    },
+    {
+      "nombre": "Terrario Especial",
+      "tipo": "Equipamiento",
+      "estado": "libre",
+      "descripcion": "Contenedor seguro para serpientes.",
+      "asociado": ["Serpientes"],
+      "exclusiones": ["Conejos", "Roedores","Perros","Gatos","Aves"]
+    },
+    {
+      "nombre": "Vehiculo Petmovil",
+      "tipo": "Transporte",
+      "estado": "libre",
+      "descripcion": "Equipo necesario para el traslado de los animales",
+      "asociado": ["Voluntario"],
+      "exclusiones": ["Personal de Recepcion","Voluntario de Adopciones"]
+    },
+       {
+      "nombre": "Croquetas Premium",
+      "tipo": "Alimento",
+      "estado": "libre",
+      "descripcion": "Alimento para perros",
+      "asociado": ["Perros"],
+      "exclusiones": ["Gatos","Roedores","Conejos","Aves","Serpientes"]
+    },
+      {
+      "nombre": "Carne Congelada",
+      "tipo": "Alimento",
+      "estado": "libre",
+      "descripcion": "Alimento para serpientes",
+      "asociado": ["Serpientes"],
+      "exclusiones": ["Gatos","Roedores","Conejos","Aves","Perros"]
+    },
+      {
+      "nombre": "Heno Premium",
+      "tipo": "Alimento",
+      "estado": "libre",
+      "descripcion": "Alimento para conejos",
+      "asociado": ["Conejos"],
+      "exclusiones": ["Gatos","Roedores","Perros","Aves","Serpientes"]
+    },
+      {
+      "nombre": "Mezcla de Semillas",
+      "tipo": "Alimento",
+      "estado": "libre",
+      "descripcion": "Alimento para aves y roedores",
+      "asociado": ["Aves","Roedores"],
+      "exclusiones": ["Gatos","Conejos","Perros","Serpientes"]
+    }
+  ]
+  
+    
+
+    
+    
+    
